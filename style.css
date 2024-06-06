@@ -1,0 +1,206 @@
+*{
+padding:0;
+margin:0;
+text-decoration: none;
+list-style:none;
+box-sizing: border-box;
+
+}
+
+body{
+    height:100vh;
+    font-family: Brush Script MT, cursive;
+    background-image: url("students.avif");
+    background-size: cover;
+    background-position: center;
+
+}
+
+nav{
+    height: 90px;
+    width: 100%;
+}
+label.logo{
+    color: rgb(0, 0, 0);
+    font-size: 40px;
+    line-height: 80px;
+    padding:0 80px;
+    font-weight: bold;
+}
+nav ul{
+    float:right;
+    margin-right: 18px;
+}
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+nav ul li a{
+    color:rgb(255, 0, 0);
+    font-size: 20px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+a.active,a:hover{
+    background: rgba(255, 166, 0, 0.568);
+    transition: .5s;
+}
+.checkbtn{
+    font-size:30px;
+    color:rgba(22, 151, 28, 0.822);
+    float:right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+#check{
+    display: none;
+}
+@media (max-width: 952px){
+    label.logo{
+        font-size:30px;
+        padding-left: 50px;
+    }
+    nav ul li a{
+        font-size: 16px;
+    }
+}
+@media (max-width: 858px){
+    .checkbtn{
+        display:block;
+    }
+    ul{
+        position: fixed;
+        width:100%;
+        height:100vh;
+        background: #1f4621;
+        top:80px;
+        left:-100%;
+        text-align: center;
+        transition: all ,2s;
+        
+    }
+    nav ul li{
+        display:block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    nav ul li a{
+        font-size:20px;
+    }
+    a:hover,a.active{
+        background:none;
+        color:rgba(217, 255, 0, 0.849);
+    }
+    #check:checked ~ ul{
+        left:0;
+    }
+}
+.login{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: #fbff00;
+    padding: 30px 40px;
+    font-weight: bold;
+}
+.login h1{
+    font-size: 35px;
+    text-align: center;
+}
+.login .input-box{
+    width: 100%;
+    height: 50px;
+    margin: 30px 0;
+    background: none;
+    position: relative;
+}
+.input-box input{
+    width:100%;
+    height:100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 5px solid rgba(255,255,255, .2);
+    border-radius: 40px;
+    font-size: 16px;
+    color: #fbff00;
+    font-weight: bold;
+    padding: 20px 45px 20px 20px;
+}
+.input-box input::placeholder{
+    color:#fbff00a8;
+}
+.login .remember{
+    display: flex;
+    justify-content: space-between;
+    font-size: 15px;
+    margin: -15px 0 15px;
+}
+.remember label input{
+    accent-color: #fbff00;
+    margin-right: 3px;
+    font-weight: bold;
+}
+.remember a{
+    color:#ffffff;
+    text-decoration: none;
+    font-weight: bold;
+}
+.remember a:hover{
+    text-decoration: underline;
+}
+.login .btn{
+    width: 100%;
+    height: 45px;
+    background: #fbff00;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    box-shadow: 0 0 10px rgba(255, 179, 230, 0.1);
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+}
+.login .registerbtn{
+    font-size: 15px;
+    text-align: center;
+    margin: 20px 0 15px;
+}
+.registerbtn p a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 600;
+}
+.registerbtn p a:hover{
+    text-decoration: underline;
+
+}
+main {
+    justify-content: center;
+    text-align: center;
+    color: #eeff02;
+    margin: 0 auto;
+    padding: 150px 20px;
+    min-height: calc(100vh - 90px - 79px);
+}
+article{
+    background-color: #1c1fe4a6;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+footer{
+    text-align: center;
+    background-color:#6e1111e7;
+    color: rgb(255, 255, 255);
+    padding:30px;
+}
+.akt{
+    background-color: rgba(0, 217, 255, 0.11);
+}
